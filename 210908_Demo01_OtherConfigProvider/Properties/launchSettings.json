@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "210908_Demo01_OtherConfigProvider": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "proxy:port": "1010",
+        "name": "albertzhao",
+        "proxy:address": "szdxzhy@outlook.com",
+        "age": "25"
+      }
+    }
+  }
+}

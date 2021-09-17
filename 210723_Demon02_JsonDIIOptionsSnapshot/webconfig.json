@@ -1,0 +1,30 @@
+{
+  "name": null,
+  "AppConfig": {
+    "DbConnection": null,
+    "EnableTrace": false,
+    "IpWhiteList": ["127.0.0.1","1.1.2.1","2.3.1.5"],
+    "Port": 55155,
+    "ServiceName": null
+  },
+  "Student": [
+    {
+      "name": "yzk",
+      "age": 18
+    },
+    {
+      "name": "albert",
+      "age": 18
+    }
+  ],
+  "Teacher": [
+    {
+      "name": "albertzhao",
+      "age": 25
+    },
+    {
+      "name": "yangzhongke",
+      "age": 40
+    }
+  ]
+}

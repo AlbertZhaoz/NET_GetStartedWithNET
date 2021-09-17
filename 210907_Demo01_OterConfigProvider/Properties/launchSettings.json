@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "210907_Demo01_OterConfigProvider": {
+      "commandName": "Project",
+      "commandLineArgs": "proxy:address=szdxzhy@outlook.com proxy:port=8080"
+    }
+  }
+}

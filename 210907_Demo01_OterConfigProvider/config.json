@@ -1,0 +1,9 @@
+﻿{
+  "name": "albertzhao",
+  "age": "25",
+  "proxy": {
+    "address": "szdxzhy@outlook.com",
+    "port": "8080",
+    "array": [1,2,3]
+  }
+}

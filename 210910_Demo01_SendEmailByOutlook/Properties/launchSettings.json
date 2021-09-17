@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "210910_Demo01_SendEmailByOutlook": {
+      "commandName": "Project",
+      "commandLineArgs": "name=ALBERTZHAO",
+      "environmentVariables": {
+        "Albert_name": "Jack"
+      }
+    }
+  }
+}
