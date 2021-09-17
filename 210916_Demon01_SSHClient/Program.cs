@@ -10,7 +10,7 @@ namespace _210916_Demon01_SSHClient
         /// 
         /// </summary>
         /// <param name="args"></param>
-        /// <remarks>此处增加评论来验证Github仓库和Gitee仓库</remarks>
+        /// <remarks>此处增加评论来验证Github仓库和Gitee仓库。</remarks>
         static void Main(string[] args)
         {
             byte[] expectedFingerPrint = new byte[] {
