@@ -12,6 +12,7 @@ namespace _210915_Demon01_Logging
     {
         static void Main(string[] args)
         {
+            //前往官方注册exceptionless.com
             ExceptionlessClient.Default.Startup("up5uzK6h92iGTN6ZAXNkiVecefPRWFLuwp45Chfd");
             var service = new ServiceCollection();
             service.AddLogging(e=> {
@@ -24,7 +25,7 @@ namespace _210915_Demon01_Logging
                 Log.Logger = new LoggerConfiguration().MinimumLevel.Debug()
                 .Enrich.FromLogContext()
                 .WriteTo.Console(new JsonFormatter())
-                .WriteTo.Exceptionless()
+                .WriteTo.Exceptionless()//集中化日志服务Exceptionless
                 .CreateLogger();
                 e.AddSerilog();
                 });
