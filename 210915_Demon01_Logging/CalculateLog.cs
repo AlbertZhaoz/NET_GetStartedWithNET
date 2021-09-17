@@ -28,7 +28,7 @@ namespace SystemService
             logger.LogError("Operate calculate failed.");
             logger.LogTrace("Tracking error.");
             logger.LogError("Operate database failed.");
-            logger.LogDebug("Add a person{@person}", new { name = "Albert", age = 25, email = "szdxzhy@outlook.com" });
+            logger.LogInformation("Add a person{@person}", new { name = "Albert", age = 25, email = "szdxzhy@outlook.com" });
             //可以将异常信息写入
             try
             {

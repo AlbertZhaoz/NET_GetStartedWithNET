@@ -14,6 +14,8 @@ namespace _210915_Demon01_Logging
         {
             //前往官方注册exceptionless.com
             ExceptionlessClient.Default.Startup("up5uzK6h92iGTN6ZAXNkiVecefPRWFLuwp45Chfd");
+            //设置记录日志等级
+            ExceptionlessClient.Default.Configuration.SetDefaultMinLogLevel(Exceptionless.Logging.LogLevel.Trace);
             var service = new ServiceCollection();
             service.AddLogging(e=> {
                 //e.AddConsole();//Console Provider 保存日志到控制台下，这边执行的操作就是ConfigurationBuilder.Addxxx()。
