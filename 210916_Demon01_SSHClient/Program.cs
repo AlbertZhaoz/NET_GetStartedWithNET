@@ -4,44 +4,21 @@ using System;
 
 namespace _210916_Demon01_SSHClient
 {
-    internal class Program
+    class Program
     {
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="args"></param>
-        /// <remarks>此处增加评论来验证Github仓库和Gitee仓库。</remarks>
         static void Main(string[] args)
         {
-            byte[] expectedFingerPrint = new byte[] {
-                                            0x66, 0x31, 0xaf, 0x00, 0x54, 0xb9, 0x87, 0x31,
-                                            0xff, 0x58, 0x1c, 0x31, 0xb1, 0xa2, 0x4c, 0x6b,
-                                        };
-
-            using (var client = new SshClient("sftp.foo.com",8080, "guest", "pwd"))
+            ConnectionInfo conInfo = new ConnectionInfo("172.23.236.199", 22, "test", new AuthenticationMethod[]
             {
-                client.HostKeyReceived += (sender, e) =>
-                {
-                    if (expectedFingerPrint.Length == e.FingerPrint.Length)
-                    {
-                        for (var i = 0; i < expectedFingerPrint.Length; i++)
-                        {
-                            if (expectedFingerPrint[i] != e.FingerPrint[i])
-                            {
-                                e.CanTrust = false;
-                                break;
-                            }
-                        }
-                    }
-                    else
-                    {
-                        e.CanTrust = false;
-                    }
-                };
+               new PasswordAuthenticationMethod("test", "Shanghai2010")
+            });
+            using (SshClient client = new SshClient(conInfo))
+            {               
                 client.Connect();
-            }
-
-            Console.WriteLine("Hello World!");
+                var output = client.RunCommand("ls -l");
+                Console.WriteLine(output.Result.ToString());
+                client.Disconnect();
+            }                   
         }
     }
 }
