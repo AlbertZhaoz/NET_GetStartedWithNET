@@ -53,7 +53,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "210915_Demon01_Logging", ".
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "210916_Demon01_SSHClient", "..\210916_Demon01_SSHClient\210916_Demon01_SSHClient.csproj", "{33B5FBC0-ACC2-40DA-9046-3FA7F4CEE6E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "210917_Demon01_EFCoreAlbert", "..\210917_Demon01_EFCoreAlbert\210917_Demon01_EFCoreAlbert.csproj", "{31AF095F-62AA-4520-9592-6FCB1FA557F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "210917_Demon01_EFCoreAlbert", "..\210917_Demon01_EFCoreAlbert\210917_Demon01_EFCoreAlbert.csproj", "{31AF095F-62AA-4520-9592-6FCB1FA557F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "210922_Demon01_WriteTextToFile", "..\210922_Demon01_WriteTextToFile\210922_Demon01_WriteTextToFile.csproj", "{862605B2-07F5-4C82-8960-6D9F0735E19F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -165,6 +167,10 @@ Global
 		{31AF095F-62AA-4520-9592-6FCB1FA557F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31AF095F-62AA-4520-9592-6FCB1FA557F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31AF095F-62AA-4520-9592-6FCB1FA557F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{862605B2-07F5-4C82-8960-6D9F0735E19F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{862605B2-07F5-4C82-8960-6D9F0735E19F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{862605B2-07F5-4C82-8960-6D9F0735E19F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{862605B2-07F5-4C82-8960-6D9F0735E19F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
