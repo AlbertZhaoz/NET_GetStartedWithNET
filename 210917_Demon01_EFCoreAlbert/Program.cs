@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 
 namespace _210917_Demon01_EFCoreAlbert
 {

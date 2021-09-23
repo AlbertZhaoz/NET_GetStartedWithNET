@@ -8,12 +8,11 @@ using System.Threading.Tasks;
 
 namespace _210917_Demon01_EFCoreAlbert
 {
-    class BookConfig : IEntityTypeConfiguration<Book>
+    public class PersonConfig : IEntityTypeConfiguration<Person>
     {
-        public void Configure(EntityTypeBuilder<Book> builder)
+        public void Configure(EntityTypeBuilder<Person> builder)
         {
-            builder.ToTable("T_Books").Property(e=>e.Title).HasMaxLength(40).IsRequired();
-            builder.Property(e=>e.AuthorName).HasMaxLength(20).IsRequired();
+            builder.ToTable("T_Person");
         }
     }
 }
