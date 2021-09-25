@@ -10,7 +10,8 @@ namespace _210917_Demon01_EFCoreAlbert
     public class MyDbContext:DbContext
     {
         public DbSet<Book> Books { get; set; }
-        public DbSet<Person> Person {  get; set; }
+        public DbSet<Person> Persons {  get; set; }
+        public DbSet<Dog> Dogs { get;set;  }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
