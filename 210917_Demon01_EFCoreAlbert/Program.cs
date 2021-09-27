@@ -67,6 +67,13 @@ namespace _210917_Demon01_EFCoreAlbert
                 var cBook = ctx.Books.Single(e => e.Title == "Top of the ware");
                 ctx.Remove(cBook);
 
+                //找到所有书籍然后价格高于60的都涨价1块钱
+                var albertBooks2 = ctx.Books.Where(e => e.Price > 60);
+                foreach (var item in albertBooks2)
+                {
+                    item.Price = item.Price + 2;
+                }
+
                 await ctx.SaveChangesAsync();
             }
         }
