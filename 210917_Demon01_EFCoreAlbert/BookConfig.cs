@@ -14,6 +14,7 @@ namespace _210917_Demon01_EFCoreAlbert
         {
             builder.ToTable("T_Books").Property(e=>e.Title).HasMaxLength(40).IsRequired();
             builder.Property(e=>e.AuthorName).HasMaxLength(20).IsRequired();
+            builder.Property(e=>e.Title).HasMaxLenth(30).IsRequired();
         }
     }
 }
