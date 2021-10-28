@@ -17,12 +17,12 @@ namespace _210917_Demon01_EFCoreAlbert
         {
             //插入数据 ctx=逻辑上的数据库
             using (var ctx = new MyDbContext())
-            {             
+            {
                 var booksTable = ctx.Books;
                 foreach (var item in booksTable)
                 {
                     ctx.Remove(item);
-                }               
+                }
                 await ctx.SaveChangesAsync();
                 //初始化数据表
                 await InitDataBase(ctx);
@@ -74,7 +74,27 @@ namespace _210917_Demon01_EFCoreAlbert
                     item.Price = item.Price + 2;
                 }
 
+                // 测试自增主键
+                Dog dog = new Dog();
+                dog.Name = "DogOne";
+                Console.WriteLine($"我是自增主键{dog.Id}");
+                await ctx.AddAsync(dog);
                 await ctx.SaveChangesAsync();
+                Console.WriteLine($"我是自增主键{dog.Id}");
+
+                Guid guid = Guid.NewGuid();
+                Console.WriteLine(guid);
+                Console.WriteLine(guid.ToString());
+
+                //使用杨中科老师的Nuget包:Zack.EFCore.Batch进行批量删除和更新数据
+                await ctx.DeleteRangeAsync<Book>(e => e.Price > 80 && e.AuthorName == "WuJun");
+                await ctx.BatchUpdate<Book>()
+     .Set(b => b.Price, b => b.Price + 3)
+     .Set(b => b.Title, b => "HelloWorld")
+     .Set(b => b.AuthorName, b => b.Title.Substring(3, 2) + b.AuthorName.ToUpper())
+     .Set(b => b.PubTime, b => DateTime.Now)
+     .Where(b => b.Id > 1 || b.AuthorName.StartsWith("Albert"))
+     .ExecuteAsync();
             }
         }
 

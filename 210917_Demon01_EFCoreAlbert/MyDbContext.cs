@@ -12,12 +12,14 @@ namespace _210917_Demon01_EFCoreAlbert
         public DbSet<Book> Books { get; set; }
         public DbSet<Person> Persons {  get; set; }
         public DbSet<Dog> Dogs { get;set;  }
+        public DbSet<Cat> Cats {  get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
             string connStr = "Server = .; Database = AlbertBook; Trusted_Connection = True;MultipleActiveResultSets=true";
-            optionsBuilder.UseSqlServer(connStr);           
+            optionsBuilder.UseSqlServer(connStr);
+            optionsBuilder.UseBatchEF_MSSQL();
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

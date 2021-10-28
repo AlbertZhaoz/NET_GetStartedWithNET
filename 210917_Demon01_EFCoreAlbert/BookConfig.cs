@@ -13,6 +13,10 @@ namespace _210917_Demon01_EFCoreAlbert
         public void Configure(EntityTypeBuilder<Book> builder)
         {
             builder.ToTable("T_Books").Property(e=>e.Title).HasMaxLength(40).IsRequired();
+            //例子
+            //builder.ToTable("T_Books").HasIndex(e => e.Title);
+            //builder.Ignore(b=>b.Price);
+            //属性长度限制为20，且不可以为空。
             builder.Property(e=>e.AuthorName).HasMaxLength(20).IsRequired();
         }
     }
