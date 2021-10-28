@@ -18,6 +18,7 @@ namespace _210917_Demon01_EFCoreAlbert
             //builder.Ignore(b=>b.Price);
             //属性长度限制为20，且不可以为空。
             builder.Property(e=>e.AuthorName).HasMaxLength(20).IsRequired();
+            builder.Property(e=>e.Title).HasMaxLenth(30).IsRequired();
         }
     }
 }
