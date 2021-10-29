@@ -86,6 +86,16 @@ namespace _210917_Demon01_EFCoreAlbert
                 Console.WriteLine(guid);
                 Console.WriteLine(guid.ToString());
 
+
+                //插入数据不适用指定值
+                Rabbit rabbit = new Rabbit();
+                rabbit.Name = "yzk";
+                Console.WriteLine(rabbit.Id);
+                ctx.Rabbits.Add(rabbit);
+                Console.WriteLine(rabbit.Id);
+                await ctx.SaveChangesAsync();
+                Console.WriteLine(rabbit.Id);
+
                 //使用杨中科老师的Nuget包:Zack.EFCore.Batch进行批量删除和更新数据
                 await ctx.DeleteRangeAsync<Book>(e => e.Price > 80 && e.AuthorName == "WuJun");
                 await ctx.BatchUpdate<Book>()
