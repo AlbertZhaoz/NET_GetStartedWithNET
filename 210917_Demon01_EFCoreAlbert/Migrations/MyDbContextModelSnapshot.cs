@@ -39,8 +39,8 @@ namespace _210917_Demon01_EFCoreAlbert.Migrations
 
                     b.Property<string>("Title")
                         .IsRequired()
-                        .HasMaxLength(40)
-                        .HasColumnType("nvarchar(40)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.HasKey("Id");
 

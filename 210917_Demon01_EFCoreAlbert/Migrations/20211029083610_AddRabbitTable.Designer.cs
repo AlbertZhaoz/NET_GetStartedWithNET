@@ -10,7 +10,7 @@ using _210917_Demon01_EFCoreAlbert;
 namespace _210917_Demon01_EFCoreAlbert.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    [Migration("20211028053316_AddRabbitTable")]
+    [Migration("20211029083610_AddRabbitTable")]
     partial class AddRabbitTable
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -41,8 +41,8 @@ namespace _210917_Demon01_EFCoreAlbert.Migrations
 
                     b.Property<string>("Title")
                         .IsRequired()
-                        .HasMaxLength(40)
-                        .HasColumnType("nvarchar(40)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.HasKey("Id");
 

@@ -91,7 +91,7 @@ namespace _210917_Demon01_EFCoreAlbert
                 Rabbit rabbit = new Rabbit();
                 rabbit.Name = "yzk";
                 Console.WriteLine(rabbit.Id);
-                ctx.Rabbits.Add(rabbit);
+                ctx.Add(rabbit);
                 Console.WriteLine(rabbit.Id);
                 await ctx.SaveChangesAsync();
                 Console.WriteLine(rabbit.Id);
