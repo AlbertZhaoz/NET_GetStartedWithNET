@@ -79,7 +79,7 @@ namespace _210917_Demon01_EFCoreAlbert
                 dog.Name = "DogOne";
                 Console.WriteLine($"我是自增主键{dog.Id}");
                 await ctx.AddAsync(dog);
-                await ctx.SaveChangesAsync();
+                await ctx.SaveChangesAsync(); //自增的数据是数据赋值
                 Console.WriteLine($"我是自增主键{dog.Id}");
 
                 Guid guid = Guid.NewGuid();
@@ -91,7 +91,7 @@ namespace _210917_Demon01_EFCoreAlbert
                 Rabbit rabbit = new Rabbit();
                 rabbit.Name = "yzk";
                 Console.WriteLine(rabbit.Id);
-                ctx.Add(rabbit);
+                ctx.Add(rabbit); //EFCore引擎来给Guid字段赋值
                 Console.WriteLine(rabbit.Id);
                 await ctx.SaveChangesAsync();
                 Console.WriteLine(rabbit.Id);
