@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Serilog;
 using Serilog.Formatting.Json;
+using Microsoft.Extensions.Logging;
 
 namespace _211101_Demo01_ScaffoldDbContext
 {
@@ -11,15 +12,14 @@ namespace _211101_Demo01_ScaffoldDbContext
         static void Main(string[] args)
         {
             //依赖注入
-            service.AddAlbertLogExtension();
-            service.AddScoped<AlbertBookContext>();
-            service.AddLogging(e => {
-                Log.Logger = new LoggerConfiguration().MinimumLevel.Debug()
-                .Enrich.FromLogContext()
-                .WriteTo.Console(new JsonFormatter())
-                .CreateLogger();
-                e.AddSerilog();
-            });
+            service.AddScoped<ILoggerFactory>(e=>new LoggerFactory());
+            //service.AddLogging(e => {
+            //    Log.Logger = new LoggerConfiguration().MinimumLevel.Debug()
+            //    .Enrich.FromLogContext()
+            //    .WriteTo.Console(new JsonFormatter())
+            //    .CreateLogger();
+            //    e.AddSerilog();
+            //});          
         }
     }
 }
