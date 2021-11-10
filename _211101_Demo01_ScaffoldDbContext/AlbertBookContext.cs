@@ -9,18 +9,8 @@ namespace _211101_Demo01_ScaffoldDbContext
 {
     public partial class AlbertBookContext : DbContext
     {
-        private readonly ILoggerFactory loggerFactory;
+        private static readonly ILoggerFactory loggerFactory = LoggerFactory.Create(builder=>builder.AddConsole());
         public IServiceProvider Services { get; set; }
-
-        public AlbertBookContext(ILoggerFactory loggerFactory)
-        {
-            this.loggerFactory = loggerFactory;
-        }
-
-        public AlbertBookContext(DbContextOptions<AlbertBookContext> options)
-            : base(options)
-        {
-        }
 
         public virtual DbSet<Dog> Dogs { get; set; }
         public virtual DbSet<TBook> TBooks { get; set; }
@@ -34,7 +24,12 @@ namespace _211101_Demo01_ScaffoldDbContext
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
                 optionsBuilder.UseSqlServer("Server = .; Database = AlbertBook; Trusted_Connection = True;MultipleActiveResultSets=true");
-                optionsBuilder.UseLoggerFactory(loggerFactory);
+                //optionsBuilder.UseLoggerFactory(loggerFactory);
+                //optionsBuilder.LogTo(msg =>
+                //{
+                //    //msg是EF输出的消息
+                //    Console.WriteLine(msg);
+                //});
             }
         }
 
