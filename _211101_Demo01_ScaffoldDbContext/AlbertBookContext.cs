@@ -22,7 +22,20 @@ namespace _211101_Demo01_ScaffoldDbContext
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server = .; Database = AlbertTemp; Trusted_Connection = True;MultipleActiveResultSets=true");
+                //If you wanna convert the C# code to SQLServer, you should use the following package.
+                //EFProvider-SQLServer PackageReference-Microsoft.EntityFrameworkCore.SqlServer
+                //optionsBuilder.UseSqlServer("Server = .; Database = AlbertTemp; Trusted_Connection = True;MultipleActiveResultSets=true");
+
+                //If you wanna convert the C# code to MySQL, you should use the following package.
+                //EFProvider-MySql PackageReference-Pomelo.EntityFrameworkCore.MySql
+                // Replace with your connection string.
+                var connectionString = "server=localhost;user=root;password=eason12138.;database=AlbertTBooks";
+                var serverVersion = new MySqlServerVersion(new Version(8, 0, 27));
+
+                optionsBuilder.UseMySql(connectionString, serverVersion);
+
+
+                //标准日志 Package-Microsoft.Extensions.Logging
                 //optionsBuilder.UseLoggerFactory(loggerFactory);
                 optionsBuilder.LogTo(msg =>
                 {
