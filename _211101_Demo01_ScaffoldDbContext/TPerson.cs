@@ -12,5 +12,7 @@ namespace _211101_Demo01_ScaffoldDbContext
         public int Age { get; set; }
         public string BirthPlace { get; set; }
         public double? Salary { get; set; }
+        //?表示可空类型
+        public DateTime? BirthDay { get; set; }
     }
 }
