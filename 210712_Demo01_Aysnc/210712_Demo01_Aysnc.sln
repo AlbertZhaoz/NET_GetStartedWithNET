@@ -59,7 +59,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "210922_Demon01_WriteTextToF
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "210925_Demon01_LinqReview", "..\210925_Demon01_LinqReview\210925_Demon01_LinqReview.csproj", "{66EFD7FB-CD3D-4097-802F-6E9D8D462A71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_211101_Demo01_ScaffoldDbContext", "..\_211101_Demo01_ScaffoldDbContext\_211101_Demo01_ScaffoldDbContext.csproj", "{2379E107-0DDC-4B14-93D6-67B01E411712}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_211101_Demo01_ScaffoldDbContext", "..\_211101_Demo01_ScaffoldDbContext\_211101_Demo01_ScaffoldDbContext.csproj", "{2379E107-0DDC-4B14-93D6-67B01E411712}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_211112_Demo01_DataBaseRelation", "..\_211112_Demo01_DataBaseRelation\_211112_Demo01_DataBaseRelation.csproj", "{1A1FF7EC-98F6-4106-A8CF-5BF5C821CD2A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -183,6 +185,10 @@ Global
 		{2379E107-0DDC-4B14-93D6-67B01E411712}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2379E107-0DDC-4B14-93D6-67B01E411712}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2379E107-0DDC-4B14-93D6-67B01E411712}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A1FF7EC-98F6-4106-A8CF-5BF5C821CD2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A1FF7EC-98F6-4106-A8CF-5BF5C821CD2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A1FF7EC-98F6-4106-A8CF-5BF5C821CD2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A1FF7EC-98F6-4106-A8CF-5BF5C821CD2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

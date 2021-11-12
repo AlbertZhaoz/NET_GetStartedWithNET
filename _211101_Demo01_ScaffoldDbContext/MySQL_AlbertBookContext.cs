@@ -26,6 +26,10 @@ namespace _211101_Demo01_ScaffoldDbContext
                 var connectionString = "server=localhost;user=root;password=eason12138.;database=ef";
                 var serverVersion = new MySqlServerVersion(new Version(8, 0, 27));
                 optionsBuilder.UseMySql(connectionString, serverVersion);
+                optionsBuilder.LogTo(msg => {
+                    if (!msg.Contains("Executed DbCommand")) return;
+                    Console.WriteLine(msg);
+                    });
             }
            
             //string connStr = "Server = .; Database = AlbertBook; Trusted_Connection = True;MultipleActiveResultSets=true";
