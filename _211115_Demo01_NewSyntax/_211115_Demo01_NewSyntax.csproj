@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+	<!--隐式Using ImplicitUsings-->
+    <ImplicitUsings>enable</ImplicitUsings>	 
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\_211112_Demo01_DataBaseRelation\_211112_Demo01_DataBaseRelation.csproj" />	
+  </ItemGroup>
+
+  <ItemGroup>
+	<Using Include="_211112_Demo01_DataBaseRelation" />
+  </ItemGroup>
+
+</Project>
