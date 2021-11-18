@@ -63,7 +63,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_211101_Demo01_ScaffoldDbCo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_211112_Demo01_DataBaseRelation", "..\_211112_Demo01_DataBaseRelation\_211112_Demo01_DataBaseRelation.csproj", "{1A1FF7EC-98F6-4106-A8CF-5BF5C821CD2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_211115_Demo01_NewSyntax", "..\_211115_Demo01_NewSyntax\_211115_Demo01_NewSyntax.csproj", "{2013BF7C-F0BC-44F8-AB71-0334B716F063}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_211115_Demo01_NewSyntax", "..\_211115_Demo01_NewSyntax\_211115_Demo01_NewSyntax.csproj", "{2013BF7C-F0BC-44F8-AB71-0334B716F063}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_211118_Demo01_GolangCSharpImplement", "..\_211118_Demo01_GolangCSharpImplement\_211118_Demo01_GolangCSharpImplement.csproj", "{DF8EBA11-BE9A-4B38-96E5-15B441B155EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -195,6 +197,10 @@ Global
 		{2013BF7C-F0BC-44F8-AB71-0334B716F063}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2013BF7C-F0BC-44F8-AB71-0334B716F063}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2013BF7C-F0BC-44F8-AB71-0334B716F063}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF8EBA11-BE9A-4B38-96E5-15B441B155EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF8EBA11-BE9A-4B38-96E5-15B441B155EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF8EBA11-BE9A-4B38-96E5-15B441B155EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF8EBA11-BE9A-4B38-96E5-15B441B155EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
