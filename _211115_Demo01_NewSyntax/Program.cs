@@ -1,5 +1,21 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using System.Collections.Generic;
+// See https://aka.ms/new-console-template for more information
 using _211115_Demo01_NewSyntax;
+
+
+Dictionary<string,int> dicStuManager = new Dictionary<string, int>();
+dicStuManager.Add("AlbertZhao",15);
+dicStuManager.Add("AlbertLi",14);
+dicStuManager.Add("AlbertChen",13);
+dicStuManager.Add("AlbertHuang",12);
+
+var tempdic = dicStuManager.OrderBy(o => o.Key);
+
+foreach (var item in tempdic)
+{
+    System.Console.WriteLine(item.Key);
+}
+
 
 Console.WriteLine("HelloAlbert");
 Article article = new Article();
