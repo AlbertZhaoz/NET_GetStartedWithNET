@@ -29,8 +29,19 @@ foreach (var word in splictWords)
         dicWords.Add(word, 1);
     }
 }
-
 foreach (var item in dicWords)
 {
     Console.WriteLine(item.Key+":"+item.Value);
 }
+
+
+//删除字符串首尾空格
+var str = "   This is free city  ";
+Console.WriteLine(str.Trim());
+string.Intern(str);
+
+
+//判断字符串是否以指定开头或结尾
+var str2 = "This is free city";
+Console.WriteLine(str2.StartsWith("This"));
+Console.WriteLine(str2.EndsWith("city"));
