@@ -1,6 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 //C# 字典排序
+using _211118_Demo01_GolangCSharpImplement;
+using System.Drawing;
+using System.Text.Json;
+
 Dictionary<string, int> dicStuManager = new Dictionary<string, int>();
 dicStuManager.Add("AlbertZhao", 15);
 dicStuManager.Add("AlbertLi", 14);
@@ -45,3 +49,26 @@ string.Intern(str);
 var str2 = "This is free city";
 Console.WriteLine(str2.StartsWith("This"));
 Console.WriteLine(str2.EndsWith("city"));
+
+//格式化输出当前日志
+Console.WriteLine(DateTime.Now.ToString("yyyy-MM-dd"));
+Console.WriteLine(DateTime.Now.ToString("hh-mm-ss"));
+
+
+//Go 需要7s
+var strList = "";
+var startTime = DateTime.Now;
+for (int i = 0; i < 10; i++)
+{
+    strList += "hello" + i.ToString();
+}
+var endTime = DateTime.Now;
+Console.WriteLine(endTime-startTime);
+
+Cat catOne = new Cat() { Name = "AlberZhao", SubName = "AlbertZhaoMiao", Age = 25, Color = Color.White };
+//全部小写转换
+var jsonStr = JsonSerializer.Serialize(catOne).ToLower();
+//驼峰法转换结合属性
+var jsonOptions = new JsonSerializerOptions { WriteIndented = true, PropertyNamingPolicy = JsonNamingPolicy.CamelCase };
+jsonStr = JsonSerializer.Serialize(catOne, jsonOptions);
+Console.WriteLine(jsonStr);
