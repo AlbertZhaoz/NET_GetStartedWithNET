@@ -68,7 +68,7 @@ Console.WriteLine(endTime-startTime);
 Cat catOne = new Cat() { Name = "AlberZhao", SubName = "AlbertZhaoMiao", Age = 25, Color = Color.White };
 //全部小写转换
 var jsonStr = JsonSerializer.Serialize(catOne).ToLower();
-//驼峰法转换结合属性
+//驼峰法转换结合属性  WriteIndented=true开启Json格式化输出
 var jsonOptions = new JsonSerializerOptions { WriteIndented = true, PropertyNamingPolicy = JsonNamingPolicy.CamelCase };
 jsonStr = JsonSerializer.Serialize(catOne, jsonOptions);
 Console.WriteLine(jsonStr);
