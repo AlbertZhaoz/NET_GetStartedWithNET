@@ -72,3 +72,9 @@ var jsonStr = JsonSerializer.Serialize(catOne).ToLower();
 var jsonOptions = new JsonSerializerOptions { WriteIndented = true, PropertyNamingPolicy = JsonNamingPolicy.CamelCase };
 jsonStr = JsonSerializer.Serialize(catOne, jsonOptions);
 Console.WriteLine(jsonStr);
+
+//读取文件extensions
+FileExtensions fileExtensions = new FileExtensions("F:\\Repo\\GetStartedWithGolang\\Day1124\\InterfacePractise\\main.go");
+await fileExtensions.ReadFileOne();
+Console.WriteLine("===================");
+fileExtensions.ReadFileByBuffer();
