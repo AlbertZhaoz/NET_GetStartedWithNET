@@ -69,7 +69,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_211118_Demo01_GolangCSharp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowershellExtensions", "..\PowershellExtensions\PowershellExtensions.csproj", "{39EB346C-1596-4B8A-9047-93CD97A0CEDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandExtensions", "..\CommandExtensions\CommandExtensions.csproj", "{FE1E3FE8-6FAC-4112-9505-DA9120F50094}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommandExtensions", "..\CommandExtensions\CommandExtensions.csproj", "{FE1E3FE8-6FAC-4112-9505-DA9120F50094}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SKIT_FlurlHttpClient_WechatAPI", "..\SKIT_FlurlHttpClient_WechatAPI\SKIT_FlurlHttpClient_WechatAPI.csproj", "{3AD8B806-322B-4FF5-909D-96B8F62FB440}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -213,6 +215,10 @@ Global
 		{FE1E3FE8-6FAC-4112-9505-DA9120F50094}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE1E3FE8-6FAC-4112-9505-DA9120F50094}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE1E3FE8-6FAC-4112-9505-DA9120F50094}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AD8B806-322B-4FF5-909D-96B8F62FB440}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AD8B806-322B-4FF5-909D-96B8F62FB440}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AD8B806-322B-4FF5-909D-96B8F62FB440}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AD8B806-322B-4FF5-909D-96B8F62FB440}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
