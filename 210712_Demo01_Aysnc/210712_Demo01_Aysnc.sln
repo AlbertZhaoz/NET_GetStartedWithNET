@@ -69,7 +69,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_211118_Demo01_GolangCSharp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowershellExtensions", "..\PowershellExtensions\PowershellExtensions.csproj", "{39EB346C-1596-4B8A-9047-93CD97A0CEDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandExtensions", "..\CommandExtensions\CommandExtensions.csproj", "{FE1E3FE8-6FAC-4112-9505-DA9120F50094}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommandExtensions", "..\CommandExtensions\CommandExtensions.csproj", "{FE1E3FE8-6FAC-4112-9505-DA9120F50094}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAnalysis", "..\DataAnalysis\DataAnalysis.csproj", "{6A75D8C0-22F7-4C40-9F1E-EFD5D5F64BCF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_211210_Demo01_WebMVC", "..\_211210_Demo01_WebMVC\_211210_Demo01_WebMVC.csproj", "{29476B6F-EEEE-47AA-A6CA-88F30779FF2C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_211210_Demo01_TestBondCompiler", "..\_211210_Demo01_TestBondCompiler\_211210_Demo01_TestBondCompiler.csproj", "{7ABB2E94-59A7-4C94-9618-E83A12620928}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_220104_WebApi", "..\_220104_WebApi\_220104_WebApi.csproj", "{9845B882-BBDB-4F46-BB34-358BBFA4A151}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_220104_WebApiLibrary01", "..\_220104_WebApiLibrary01\_220104_WebApiLibrary01.csproj", "{548E0FAF-0CD1-4802-BA41-583631805EFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_220104_WebApiLibrary02", "..\_220104_WebApiLibrary02\_220104_WebApiLibrary02.csproj", "{9B7DDA1C-4808-4E75-9A16-C152EB45EE4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -213,6 +225,30 @@ Global
 		{FE1E3FE8-6FAC-4112-9505-DA9120F50094}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE1E3FE8-6FAC-4112-9505-DA9120F50094}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE1E3FE8-6FAC-4112-9505-DA9120F50094}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A75D8C0-22F7-4C40-9F1E-EFD5D5F64BCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A75D8C0-22F7-4C40-9F1E-EFD5D5F64BCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A75D8C0-22F7-4C40-9F1E-EFD5D5F64BCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A75D8C0-22F7-4C40-9F1E-EFD5D5F64BCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29476B6F-EEEE-47AA-A6CA-88F30779FF2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29476B6F-EEEE-47AA-A6CA-88F30779FF2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29476B6F-EEEE-47AA-A6CA-88F30779FF2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29476B6F-EEEE-47AA-A6CA-88F30779FF2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ABB2E94-59A7-4C94-9618-E83A12620928}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ABB2E94-59A7-4C94-9618-E83A12620928}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ABB2E94-59A7-4C94-9618-E83A12620928}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ABB2E94-59A7-4C94-9618-E83A12620928}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9845B882-BBDB-4F46-BB34-358BBFA4A151}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9845B882-BBDB-4F46-BB34-358BBFA4A151}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9845B882-BBDB-4F46-BB34-358BBFA4A151}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9845B882-BBDB-4F46-BB34-358BBFA4A151}.Release|Any CPU.Build.0 = Release|Any CPU
+		{548E0FAF-0CD1-4802-BA41-583631805EFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{548E0FAF-0CD1-4802-BA41-583631805EFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{548E0FAF-0CD1-4802-BA41-583631805EFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{548E0FAF-0CD1-4802-BA41-583631805EFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B7DDA1C-4808-4E75-9A16-C152EB45EE4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B7DDA1C-4808-4E75-9A16-C152EB45EE4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B7DDA1C-4808-4E75-9A16-C152EB45EE4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B7DDA1C-4808-4E75-9A16-C152EB45EE4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

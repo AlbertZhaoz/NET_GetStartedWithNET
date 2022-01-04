@@ -17,7 +17,9 @@ namespace PowershellExtensions
         public Form1()
         {
             InitializeComponent();
-            
+            WechatHelper.CheckIsLogin();
+            ////MessageBox.Show(temp.ToString());
+
         }
 
         private void ChooseFile_Click(object sender, EventArgs e)

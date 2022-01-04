@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bond.Compiler" Version="9.0.5" />
+    <PackageReference Include="Bond.CSharp" Version="9.0.5" />
+    <PackageReference Include="Zack.Commons" Version="1.1.0" />
+  </ItemGroup>
+
+</Project>
