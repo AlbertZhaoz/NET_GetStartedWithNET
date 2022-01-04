@@ -71,6 +71,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowershellExtensions", "..\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommandExtensions", "..\CommandExtensions\CommandExtensions.csproj", "{FE1E3FE8-6FAC-4112-9505-DA9120F50094}"
 EndProject
+<<<<<<< HEAD
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAnalysis", "..\DataAnalysis\DataAnalysis.csproj", "{6A75D8C0-22F7-4C40-9F1E-EFD5D5F64BCF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_211210_Demo01_WebMVC", "..\_211210_Demo01_WebMVC\_211210_Demo01_WebMVC.csproj", "{29476B6F-EEEE-47AA-A6CA-88F30779FF2C}"
@@ -82,6 +83,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_220104_WebApiLibrary01", "..\_220104_WebApiLibrary01\_220104_WebApiLibrary01.csproj", "{548E0FAF-0CD1-4802-BA41-583631805EFE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_220104_WebApiLibrary02", "..\_220104_WebApiLibrary02\_220104_WebApiLibrary02.csproj", "{9B7DDA1C-4808-4E75-9A16-C152EB45EE4A}"
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SKIT_FlurlHttpClient_WechatAPI", "..\SKIT_FlurlHttpClient_WechatAPI\SKIT_FlurlHttpClient_WechatAPI.csproj", "{3AD8B806-322B-4FF5-909D-96B8F62FB440}"
+>>>>>>> 6058b089f6dea916afcdde75d6100e46f15087df
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -225,6 +229,7 @@ Global
 		{FE1E3FE8-6FAC-4112-9505-DA9120F50094}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE1E3FE8-6FAC-4112-9505-DA9120F50094}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE1E3FE8-6FAC-4112-9505-DA9120F50094}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
 		{6A75D8C0-22F7-4C40-9F1E-EFD5D5F64BCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6A75D8C0-22F7-4C40-9F1E-EFD5D5F64BCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A75D8C0-22F7-4C40-9F1E-EFD5D5F64BCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -249,6 +254,12 @@ Global
 		{9B7DDA1C-4808-4E75-9A16-C152EB45EE4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B7DDA1C-4808-4E75-9A16-C152EB45EE4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B7DDA1C-4808-4E75-9A16-C152EB45EE4A}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{3AD8B806-322B-4FF5-909D-96B8F62FB440}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AD8B806-322B-4FF5-909D-96B8F62FB440}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AD8B806-322B-4FF5-909D-96B8F62FB440}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AD8B806-322B-4FF5-909D-96B8F62FB440}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> 6058b089f6dea916afcdde75d6100e46f15087df
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
