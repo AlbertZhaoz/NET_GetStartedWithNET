@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -30,7 +31,21 @@ namespace _210725_Demon01_ASPNETCORE {
                 app.UseExceptionHandler("/Error");
             }
 
+            //默认静态文件中间件
+            app.UseDefaultFiles(new DefaultFilesOptions() { DefaultFileNames = { "default1.html" } });
+
+            //http://localhost:14086/favicon.ico
             app.UseStaticFiles();
+
+            app.Run(
+                async context =>
+                {
+                    context.Response.ContentType = "text/plain;charset=utf-8";
+                    await context.Response.WriteAsync(Configuration["MyKey"]);
+                }
+                );
+
+            //app.UseStaticFiles();
 
             app.UseRouting();
 

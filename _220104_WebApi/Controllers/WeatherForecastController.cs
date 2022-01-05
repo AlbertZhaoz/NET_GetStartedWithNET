@@ -32,6 +32,9 @@ namespace _220104_WebApi.Controllers
             })
             .ToArray();
         }
+
+        //设置缓存时间为5s
+        [ResponseCache(Duration = 5)]
         [HttpGet]
         public string GetStudentHello()
         {
