@@ -85,7 +85,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_220104_WebApiLibrary02", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SKIT_FlurlHttpClient_WechatAPI", "..\SKIT_FlurlHttpClient_WechatAPI\SKIT_FlurlHttpClient_WechatAPI.csproj", "{3AD8B806-322B-4FF5-909D-96B8F62FB440}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_220115_DownloadFromRemote", "..\_220115_DownloadFromRemote\_220115_DownloadFromRemote.csproj", "{BC14B51B-2F47-4C75-8490-B2CC5C7C9DB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_220115_DownloadFromRemote", "..\_220115_DownloadFromRemote\_220115_DownloadFromRemote.csproj", "{BC14B51B-2F47-4C75-8490-B2CC5C7C9DB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCopyDirectoryAsyncProvider", "..\TestCopyDirectoryAsyncProvider\TestCopyDirectoryAsyncProvider.csproj", "{1E8460F7-586E-415C-BF66-370C1E407DD5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -261,6 +263,10 @@ Global
 		{BC14B51B-2F47-4C75-8490-B2CC5C7C9DB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC14B51B-2F47-4C75-8490-B2CC5C7C9DB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC14B51B-2F47-4C75-8490-B2CC5C7C9DB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E8460F7-586E-415C-BF66-370C1E407DD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E8460F7-586E-415C-BF66-370C1E407DD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E8460F7-586E-415C-BF66-370C1E407DD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E8460F7-586E-415C-BF66-370C1E407DD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
